@@ -10,6 +10,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    dataBinding.enabled = true
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,4 +28,16 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation "android.arch.lifecycle:extensions:$rootProject.archLifeCycleVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifeCycleVersion"
+    implementation "io.reactivex:rxjava:$rootProject.rxjavaVersion"
+    implementation "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
+    implementation "com.squareup.okhttp3:mockwebserver:$rootProject.okHttpVersion"
+
+
+
 }

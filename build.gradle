@@ -22,6 +22,17 @@ allprojects {
     }
 }
 
+ext{
+
+    rxjavaVersion = '1.1.8'
+    rxandroidVersion = '1.2.1'
+    archLifeCycleVersion = '1.0.0'
+    retrofitVersion = '2.3.0'
+    okHttpVersion = '3.9.1'
+
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
