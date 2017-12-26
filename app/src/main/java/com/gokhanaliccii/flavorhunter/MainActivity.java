@@ -1,4 +1,4 @@
-package com.gokhanaliccii.twitterapp;
+package com.gokhanaliccii.flavorhunter;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

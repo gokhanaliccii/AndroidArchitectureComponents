@@ -1,4 +1,4 @@
-package com.gokhanaliccii.twitterapp;
+package com.gokhanaliccii.flavorhunter;
 
 import org.junit.Test;
 
