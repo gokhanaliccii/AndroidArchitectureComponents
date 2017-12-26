@@ -20,5 +20,8 @@ public class CollectionUtil {
         return array == null || array.length == 0;
     }
 
+    public static <T> boolean hasItem(T[] array) {
+        return !isEmpty(array);
+    }
 
 }
