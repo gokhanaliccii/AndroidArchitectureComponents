@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="foursquare_client_id">ATGQVEF51JIU3CYKM2DPEZTAE4O13WOZZZOFPRPIFFKSI1GC</string>
+    <string name="foursquare_client_secret">DLKOBX25UCFGJ05GZNIIGD5OQSBXF11V05OXT53HSB155YV1</string>
+    <string name="foursquare_api_version">20170801</string>
+
+</resources>
