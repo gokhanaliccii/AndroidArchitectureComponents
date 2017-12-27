@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.gokhanaliccii.twitterapp"
+        applicationId "com.gokhanaliccii.flavorhunter"
 
         minSdkVersion 14
         targetSdkVersion 26
@@ -17,6 +17,9 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
 
     dataBinding.enabled = true
 
@@ -32,9 +35,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.1'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     implementation "android.arch.lifecycle:extensions:$rootProject.archLifeCycleVersion"
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.archLifeCycleVersion"
@@ -44,6 +44,14 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
     implementation "com.squareup.okhttp3:mockwebserver:$rootProject.okHttpVersion"
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'org.mockito:mockito-core:1.9.5'
+
 
 
 

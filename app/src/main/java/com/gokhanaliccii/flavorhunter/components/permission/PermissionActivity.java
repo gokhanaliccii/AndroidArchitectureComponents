@@ -7,8 +7,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.gokhanaliccii.flavorhunter.util.CollectionUtil;
 
@@ -25,20 +25,67 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
 
     private static final String TAG = "BaseActivity";
 
-    private static WeakHashMap<Integer, PermissionResponseListener> sPermissionResponseListenerMap = new WeakHashMap<>();
-    private static AtomicInteger sRequesterId = new AtomicInteger(1);
+    private static final String ARG_PERMISSION_ID = "permission_request_id";
+    public static final int NONE = -1;
+
+    @VisibleForTesting
+    static WeakHashMap<Integer, PermissionRequest> sPermissionResponseListenerMap = new WeakHashMap<>();
+    @VisibleForTesting
+    static AtomicInteger sRequesterId = new AtomicInteger(1);
+
+    private int mCurrentPermissionRequestId;
+    private PermissionResponseListener mPermissionResponseListener;
 
     public static void requestForPermission(Context context, PermissionResponseListener responseListener, String[] permissions) {
+        int permissionRequestId = storePermissionRequest(responseListener, permissions);
+
         Intent permissionRequestIntent = new Intent(context, PermissionActivity.class);
+        permissionRequestIntent.putExtra(ARG_PERMISSION_ID, permissionRequestId);
         permissionRequestIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK |
                 Intent.FLAG_ACTIVITY_NO_ANIMATION);
 
         context.startActivity(permissionRequestIntent);
     }
 
+    private static int storePermissionRequest(PermissionResponseListener responseListener, String[] permissions) {
+        int newRequesterId = createNewRequesterId();
+
+        PermissionRequest newPermissionRequst = new PermissionRequest(responseListener, permissions);
+        sPermissionResponseListenerMap.put(newRequesterId, newPermissionRequst);
+
+        return newRequesterId;
+    }
+
+    private static int createNewRequesterId() {
+        return sRequesterId.incrementAndGet();
+    }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (hasPermissionArg()) {// TODO: 27/12/17 refactor
+            mCurrentPermissionRequestId = getIntent().getIntExtra(ARG_PERMISSION_ID, NONE);
+
+            if (!hasPermissionRequestId(mCurrentPermissionRequestId)) {
+                onCompleted();
+            }
+        } else {
+            onCompleted();
+        }
+
+        PermissionRequest permissionRequest = sPermissionResponseListenerMap.get(mCurrentPermissionRequestId);
+        mPermissionResponseListener = permissionRequest.getResponseListener();
+
+        requestPermissions(mPermissionResponseListener, permissionRequest.getPermissions());
+    }
+
+    private boolean hasPermissionArg() {
+        return getIntent().hasExtra(ARG_PERMISSION_ID);
+    }
+
+    private boolean hasPermissionRequestId(int permissionRequestId) {
+        return permissionRequestId != NONE;
     }
 
 
@@ -47,8 +94,7 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
         if (responseListener != null) {
 
             if (sdkAfterMarshmallow() && hasUnGrantedPermission(permissions)) {
-                int newRequesterId = storeResponseListener(responseListener);
-                findAndRequestForUnGrantedPermissions(newRequesterId, permissions);
+                findAndRequestForUnGrantedPermissions(mCurrentPermissionRequestId, permissions);
             } else {
                 responseListener.onPermissionGranted();
             }
@@ -59,36 +105,13 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        PermissionResponseListener permissionResponseListener = sPermissionResponseListenerMap.get(requestCode);
-        if (permissionResponseListener == null) {
-            Log.e(TAG, "onRequestPermissionsResult: responseListener not found for :" + requestCode);
-            return;
-        }
-
         if (hasUnGrantedPermission(permissions)) {
-            permissionResponseListener.onPermissionRejected();
+            mPermissionResponseListener.onPermissionRejected();
         } else {
-            permissionResponseListener.onPermissionGranted();
+            mPermissionResponseListener.onPermissionGranted();
         }
 
-        clearResponseListener(requestCode);
-    }
-
-    private int createNewRequesterId() {
-        return sRequesterId.incrementAndGet();
-    }
-
-    private int storeResponseListener(PermissionResponseListener responseListener) {
-        int newRequesterId = createNewRequesterId();
-        sPermissionResponseListenerMap.put(newRequesterId, responseListener);
-
-        return newRequesterId;
-    }
-
-    private void clearResponseListener(int requesterId) {
-        if (sPermissionResponseListenerMap.containsKey(requesterId)) {
-            sPermissionResponseListenerMap.remove(requesterId);
-        }
+        onCompleted();
     }
 
     private void findAndRequestForUnGrantedPermissions(int requesterId, String[] permissions) {
@@ -111,7 +134,6 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
             unGrantedPermissions.add(permission);
         }
 
-
         return (String[]) unGrantedPermissions.toArray();
     }
 
@@ -128,9 +150,18 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.M;
     }
 
+    private void onCompleted() {
+        finish();
+    }
+
+    private void clearReferences() {
+        mPermissionResponseListener = null;
+        sPermissionResponseListenerMap.clear();
+    }
+
     @Override
     protected void onDestroy() {
-        sPermissionResponseListenerMap.clear();
+        clearReferences();
         super.onDestroy();
     }
 }
