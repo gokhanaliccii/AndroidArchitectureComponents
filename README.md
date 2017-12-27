@@ -12,5 +12,5 @@ FlavorHunter is a android application for show place details which uses foursqua
 * Foursquare Integration
 * App Design
 * Fabric Integration
-* Tablet Support
+* ~~Tablet Support~~
 
