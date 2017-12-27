@@ -134,7 +134,7 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
             unGrantedPermissions.add(permission);
         }
 
-        return (String[]) unGrantedPermissions.toArray();
+        return unGrantedPermissions.toArray(new String[unGrantedPermissions.size()]);
     }
 
     private boolean isGrantedAlready(String permission) {
