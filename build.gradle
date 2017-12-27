@@ -29,6 +29,10 @@ ext{
     archLifeCycleVersion = '1.0.0'
     retrofitVersion = '2.3.0'
     okHttpVersion = '3.9.1'
+    dexMakerVersion = "1.2"
+    dexMakerVersion = "1.2"
+    uiautomatorVersion = "2.1.3"
+
 
 }
 
