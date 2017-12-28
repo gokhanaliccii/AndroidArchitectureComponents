@@ -97,6 +97,7 @@ public class PermissionActivity extends AppCompatActivity implements PermissionR
                 findAndRequestForUnGrantedPermissions(mCurrentPermissionRequestId, permissions);
             } else {
                 responseListener.onPermissionGranted();
+                onCompleted();
             }
         }
     }
