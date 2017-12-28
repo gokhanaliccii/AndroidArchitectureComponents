@@ -4,9 +4,6 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.gokhanaliccii.flavorhunter.R;
 import com.gokhanaliccii.flavorhunter.databinding.FragmentVenueListBinding;
@@ -20,7 +17,7 @@ import java.util.Collections;
  * Created by gokhan on 28/12/17.
  */
 
-public class VenueListFragment extends BaseFragment {
+public class VenueListFragment extends BaseFragment<FragmentVenueListBinding> {
 
     public static final String TAG = VenueListFragment.class.getName();
 
@@ -39,23 +36,19 @@ public class VenueListFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRetainInstance(true);
 
         ViewModelProviderFactory viewModelProviderFactory = new ViewModelProviderFactory();
         venuesViewModel = ViewModelProviders.of(this, viewModelProviderFactory).get(VenuesViewModel.class);
     }
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (mLayoutAdapter == null) {
-            View view = inflater.inflate(R.layout.fragment_venue_list, container, false);
-            mLayoutAdapter = FragmentVenueListBinding.bind(view);
+    protected int layoutRes() {
+        return R.layout.fragment_venue_list;
+    }
 
-            createListAdapter();
-        }
-
-        return mLayoutAdapter.getRoot();
+    @Override
+    protected void onViewInflated() {
+        createListAdapter();
     }
 
     @Override
