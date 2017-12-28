@@ -20,6 +20,8 @@ import java.util.Collections;
  * Created by gokhan on 28/12/17.
  */
 
+/* TODO: 28/12/17 add edittext for search functionality.
+  */
 public class VenueListFragment extends BaseBindableFragment<FragmentVenueListBinding> {
 
     public static final String TAG = VenueListFragment.class.getName();

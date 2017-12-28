@@ -1,7 +1,6 @@
 package com.gokhanaliccii.flavorhunter.view.venue;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import com.gokhanaliccii.flavorhunter.R;
 import com.gokhanaliccii.flavorhunter.view.BaseActivity;
@@ -31,14 +30,8 @@ public class VenueActivity extends BaseActivity {
                     .commit();
 
         }
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        int backStackEntryCount = fragmentManager().getBackStackEntryCount();
-        Log.i(TAG, "onResume: count"+ backStackEntryCount);
+        // TODO: 28/12/17 add two pane support...
     }
 
     public IVenueRouter getVenueRouter() {
