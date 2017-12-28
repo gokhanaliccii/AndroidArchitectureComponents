@@ -47,7 +47,6 @@ public class RestAdapter implements RestApi{
 
         OkHttpClient httpClient = httpClientBuilder.build();
 
-
         mRetrofit = new Retrofit.Builder()
                 .baseUrl(API_URL)
                 .client(httpClient)
