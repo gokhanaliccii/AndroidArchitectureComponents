@@ -9,4 +9,7 @@ public class VenueLocation {
     private String address;
     private float lat;
     private float lng;
+    private String city;
+    private String state;
+    private String country;
 }
