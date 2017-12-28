@@ -10,7 +10,7 @@ import com.gokhanaliccii.flavorhunter.components.repository.criteria.SearchCrite
 
 public interface Repository<Model> {
 
-    void get(DataLoadListener listener, SearchCriteria... searchCriteria);
+    void get(DataLoadListener<Model> listener, SearchCriteria... searchCriteria);
 
     void remove(TaskCompleteListener listener, SearchCriteria... searchCriteria);
 }
