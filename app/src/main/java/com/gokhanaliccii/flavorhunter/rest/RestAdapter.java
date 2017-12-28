@@ -21,13 +21,14 @@ import static okhttp3.logging.HttpLoggingInterceptor.Level.BODY;
  * Created by gokhan on 28/12/17.
  */
 
-public class RestAdapter implements RestApi{
+public class RestAdapter implements RestApi {
 
     public static final String API_URL = "https://api.foursquare.com/v2/venues/";
+    public static final int TIMEOUT_IN_SECOND = 30;
     private static RestAdapter sInstance;
 
     private Retrofit mRetrofit;
-    private PlaceApi mSearchApi;
+    private PlaceApi mPlaceApi;
 
 
     public RestAdapter(Context context) {
@@ -36,9 +37,9 @@ public class RestAdapter implements RestApi{
 
     private void init(Context context) {
         OkHttpClient.Builder httpClientBuilder = new OkHttpClient.Builder()
-                .readTimeout(30, TimeUnit.SECONDS)
-                .writeTimeout(30, TimeUnit.SECONDS)
-                .connectTimeout(30, TimeUnit.SECONDS)
+                .readTimeout(TIMEOUT_IN_SECOND, TimeUnit.SECONDS)
+                .writeTimeout(TIMEOUT_IN_SECOND, TimeUnit.SECONDS)
+                .connectTimeout(TIMEOUT_IN_SECOND, TimeUnit.SECONDS)
                 .addInterceptor(new FoursquareInterceptor(context));
 
         if (BuildConfig.DEBUG) {
@@ -47,18 +48,17 @@ public class RestAdapter implements RestApi{
 
         OkHttpClient httpClient = httpClientBuilder.build();
 
-
         mRetrofit = new Retrofit.Builder()
                 .baseUrl(API_URL)
                 .client(httpClient)
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
 
-        mSearchApi = mRetrofit.create(PlaceApi.class);
+        mPlaceApi = mRetrofit.create(PlaceApi.class);
     }
 
     @Override
     public PlaceApi placeApi() {
-        return null;
+        return mPlaceApi;
     }
 }

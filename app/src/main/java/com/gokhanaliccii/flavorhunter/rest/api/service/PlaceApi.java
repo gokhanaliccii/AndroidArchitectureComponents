@@ -16,10 +16,10 @@ import rx.Observable;
 public interface PlaceApi {
 
     @GET("search")
-    Observable<FoursquareResponse<VenueListResponse>> getVenuesByNearby(@Query("query") String placeType, @Query("near") String near);
+    Observable<FoursquareResponse<VenueListResponse>> getVenuesByNearby(@Query("near") String near, @Query("query") String placeType);
 
     @GET("search")
-    Observable<FoursquareResponse<VenueListResponse>> getVenuesByLocation(@Query("query") String placeType, @Query("ll") String latLng);
+    Observable<FoursquareResponse<VenueListResponse>> getVenuesByLocation(@Query("ll") String latLng, @Query("query") String placeType);
 
     @GET("{venue_id}")
     Observable<FoursquareResponse<VenueDetailResponse>> getVenueDetail(@Path("venue_id") String venueId);
