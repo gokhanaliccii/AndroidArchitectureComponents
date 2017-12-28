@@ -12,7 +12,7 @@ public abstract class AbsRemoteRepository {
     protected CompositeSubscription mCompositeSubscription;
 
     public AbsRemoteRepository() {
-        this.mCompositeSubscription = mCompositeSubscription;
+        this.mCompositeSubscription = new CompositeSubscription();
     }
 
     void addSubscription(Subscription... subscriptions) {

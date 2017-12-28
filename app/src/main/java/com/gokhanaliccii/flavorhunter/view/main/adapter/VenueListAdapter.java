@@ -1,5 +1,6 @@
 package com.gokhanaliccii.flavorhunter.view.main.adapter;
 
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,11 +32,17 @@ public class VenueListAdapter extends RecyclerView.Adapter<VenueListAdapter.View
         this.mItemClickListener = clickListener;
     }
 
+    public void updateVenues(List<Venue> venus) {
+        DiffUtil.DiffResult diffResult = DiffUtil.calculateDiff(new VenueDiffUtil(mVenus, venus));
+        mVenus = venus;
+
+        diffResult.dispatchUpdatesTo(this);
+    }
+
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         ItemVenueBinding venueBinding = ItemVenueBinding.inflate(inflater, parent, false);
-
 
         return new ViewHolder(venueBinding);
     }
