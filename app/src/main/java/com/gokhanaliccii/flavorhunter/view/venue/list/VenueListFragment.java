@@ -1,17 +1,17 @@
-package com.gokhanaliccii.flavorhunter.view.main;
+package com.gokhanaliccii.flavorhunter.view.venue.list;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.LinearLayoutManager;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.gokhanaliccii.flavorhunter.R;
 import com.gokhanaliccii.flavorhunter.databinding.FragmentVenueListBinding;
-import com.gokhanaliccii.flavorhunter.view.BaseFragment;
-import com.gokhanaliccii.flavorhunter.view.main.adapter.VenueListAdapter;
+import com.gokhanaliccii.flavorhunter.util.ViewState;
+import com.gokhanaliccii.flavorhunter.util.recyclerview.ItemDecorator;
+import com.gokhanaliccii.flavorhunter.view.BaseBindableFragment;
+import com.gokhanaliccii.flavorhunter.view.venue.VenueActivity;
+import com.gokhanaliccii.flavorhunter.view.venue.list.adapter.VenueListAdapter;
 import com.gokhanaliccii.flavorhunter.viewmodel.ViewModelProviderFactory;
 
 import java.util.Collections;
@@ -20,11 +20,9 @@ import java.util.Collections;
  * Created by gokhan on 28/12/17.
  */
 
-public class VenueListFragment extends BaseFragment {
+public class VenueListFragment extends BaseBindableFragment<FragmentVenueListBinding> {
 
     public static final String TAG = VenueListFragment.class.getName();
-
-    private FragmentVenueListBinding mLayoutAdapter;
 
     private VenueListAdapter venueListAdapter;
 
@@ -39,23 +37,19 @@ public class VenueListFragment extends BaseFragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setRetainInstance(true);
 
         ViewModelProviderFactory viewModelProviderFactory = new ViewModelProviderFactory();
         venuesViewModel = ViewModelProviders.of(this, viewModelProviderFactory).get(VenuesViewModel.class);
     }
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (mLayoutAdapter == null) {
-            View view = inflater.inflate(R.layout.fragment_venue_list, container, false);
-            mLayoutAdapter = FragmentVenueListBinding.bind(view);
+    protected int layoutRes() {
+        return R.layout.fragment_venue_list;
+    }
 
-            createListAdapter();
-        }
-
-        return mLayoutAdapter.getRoot();
+    @Override
+    protected void onViewInflated() {
+        createListAdapter();
     }
 
     @Override
@@ -63,17 +57,21 @@ public class VenueListFragment extends BaseFragment {
         super.onActivityCreated(savedInstanceState);
 
         venuesViewModel.venuesList.observe(this, venueListAdapter::updateVenues);
-        venuesViewModel.loadVenues("kocaeli", "kafe");
+        if (venuesViewModel.viewState == ViewState.IDLE) {
+            venuesViewModel.loadVenues("kocaeli", "kafe");
+        }
     }
 
     private void createListAdapter() {
         venueListAdapter = new VenueListAdapter(Collections.emptyList(),
                 (position, venue) -> {
-
+                    ((VenueActivity) getActivity()).getVenueRouter().openVenue(venue.getId());
                 });
 
+        mLayoutAdapter.recyclerviewVenue.setHasFixedSize(true);
         mLayoutAdapter.recyclerviewVenue.setLayoutManager(layoutManager());
         mLayoutAdapter.recyclerviewVenue.setAdapter(venueListAdapter);
+        mLayoutAdapter.recyclerviewVenue.addItemDecoration(new ItemDecorator(getContext()));
     }
 
     private LinearLayoutManager layoutManager() {

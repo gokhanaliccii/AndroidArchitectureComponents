@@ -13,6 +13,7 @@ public class Venue {
     private float rating;
     private VenueLocation location;
     private Tips tips;
+    private Photo bestPhoto;
 
     public String getId() {
         return id;
@@ -32,5 +33,13 @@ public class Venue {
 
     public String getAddress(){
         return location.getAddress();
+    }
+
+    public String getImageUrl(){
+        if(bestPhoto!= null){
+            return bestPhoto.getPhotoUrl();
+        }
+
+        return null;
     }
 }

@@ -1,4 +1,4 @@
-package com.gokhanaliccii.flavorhunter.view.main.adapter;
+package com.gokhanaliccii.flavorhunter.view.venue.list.adapter;
 
 import android.support.v7.util.DiffUtil;
 
