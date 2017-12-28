@@ -13,7 +13,7 @@ import rx.Observable;
  * Created by gokhan on 28/12/17.
  */
 
-public interface PlaceSearchApi {
+public interface PlaceApi {
 
     @GET("search")
     Observable<FoursquareResponse<VenueListResponse>> getVenuesByNearby(@Query("query") String placeType, @Query("near") String near);

@@ -1,0 +1,2108 @@
+{
+  "meta": {
+    "code": 200,
+    "requestId": "5a44a5b3db04f525f38be8bd"
+  },
+  "response": {
+    "venues": [
+      {
+        "id": "4f60ad8de4b04905883b3d13",
+        "name": "Saklı Çeşme Nargile Kafe",
+        "contact": {},
+        "location": {
+          "address": "Molla Gürani Mah.",
+          "crossStreet": "Halicilar Kosku Sokak",
+          "lat": 41.01515550251502,
+          "lng": 28.941040449234542,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.01515550251502,
+              "lng": 28.941040449234542
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Molla Gürani Mah. (Halicilar Kosku Sokak)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 28241,
+          "usersCount": 6272,
+          "tipCount": 93
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4b4efc8af964a5201ff826e3",
+        "name": "Ara Kafe",
+        "contact": {
+          "phone": "+902122454105",
+          "formattedPhone": "+90 212 245 41 05",
+          "facebook": "177859038897960",
+          "facebookName": "Ara Kafe"
+        },
+        "location": {
+          "address": "Tomtom Mah. Tosbağa Sok. No: 2 Galatasaray",
+          "lat": 41.03310646693916,
+          "lng": 28.977206411705378,
+          "postalCode": "34433",
+          "cc": "TR",
+          "city": "Beyoğlu",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Tomtom Mah. Tosbağa Sok. No: 2 Galatasaray",
+            "34433 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 116861,
+          "usersCount": 69220,
+          "tipCount": 1076
+        },
+        "url": "http://kafeara.com",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/ara-kafe/4b4efc8af964a5201ff826e3/menu",
+          "mobileUrl": "https://foursquare.com/v/4b4efc8af964a5201ff826e3/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 1,
+          "summary": "One other person is here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 1,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "527e207f498eec0d9219cf0a",
+        "name": "Zeytin Kafe Bar",
+        "contact": {
+          "phone": "+902163300562",
+          "formattedPhone": "+90 216 330 05 62",
+          "instagram": "zeytin_kafe_bar",
+          "facebook": "609902965720310",
+          "facebookUsername": "ZeytinKafeBar",
+          "facebookName": "Zeytin Kafe Bar"
+        },
+        "location": {
+          "address": "Kadıköy",
+          "lat": 40.98826808544374,
+          "lng": 29.02460561190166,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 40.98826808544374,
+              "lng": 29.02460561190166
+            }
+          ],
+          "postalCode": "34700",
+          "cc": "TR",
+          "neighborhood": "Caferağa",
+          "city": "Kadıköy",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Kadıköy",
+            "34700 Kadıköy",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 35020,
+          "usersCount": 19791,
+          "tipCount": 148
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/zeytin-kafe-bar/527e207f498eec0d9219cf0a/menu",
+          "mobileUrl": "https://foursquare.com/v/527e207f498eec0d9219cf0a/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 1,
+          "summary": "One other person is here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 1,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4ba49ee0f964a520d9a738e3",
+        "name": "Paşalimanı Kafe",
+        "contact": {
+          "phone": "+902164953216",
+          "formattedPhone": "+90 216 495 32 16",
+          "twitter": "belturas"
+        },
+        "location": {
+          "address": "Fethi Paşa Korusu Altı, Paşalimanı",
+          "lat": 41.03373691791651,
+          "lng": 29.024855670857256,
+          "cc": "TR",
+          "city": "Üsküdar",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Fethi Paşa Korusu Altı, Paşalimanı",
+            "Üsküdar",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 107413,
+          "usersCount": 71949,
+          "tipCount": 734
+        },
+        "url": "http://beltur.com.tr/pasalimani-kafe.asp",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/pa%C5%9Faliman%C4%B1-kafe/4ba49ee0f964a520d9a738e3/menu",
+          "mobileUrl": "https://foursquare.com/v/4ba49ee0f964a520d9a738e3/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4c3cb35017f2ef3b752881f4",
+        "name": "Kafedo",
+        "contact": {
+          "phone": "+902125231210",
+          "formattedPhone": "+90 212 523 12 10",
+          "twitter": "kafedohistoria"
+        },
+        "location": {
+          "address": "Historia",
+          "crossStreet": "Akşemsettin Mah. Adnan Menderes Vatan Blv. No:2/4",
+          "lat": 41.014151595373576,
+          "lng": 28.94504919799002,
+          "postalCode": "34080",
+          "cc": "TR",
+          "city": "Fatih",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Historia (Akşemsettin Mah. Adnan Menderes Vatan Blv. No:2/4)",
+            "34080 Fatih",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 44565,
+          "usersCount": 17310,
+          "tipCount": 217
+        },
+        "url": "http://kafedo.com.tr",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/kafedo/4c3cb35017f2ef3b752881f4/menu",
+          "mobileUrl": "https://foursquare.com/v/4c3cb35017f2ef3b752881f4/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4e9acb835503cfce745d3b1b",
+        "name": "arkabahçe kafe | mutfak",
+        "contact": {
+          "phone": "+902125555100",
+          "formattedPhone": "+90 212 555 51 00",
+          "facebook": "1453573698225444",
+          "facebookUsername": "arkabahcekafemutfak",
+          "facebookName": "arkabahçe kafe  mutfak"
+        },
+        "location": {
+          "address": "Bahçelievler Mah. Çalışlar Cad. No: 1",
+          "lat": 41.004734939373684,
+          "lng": 28.8714399933815,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.004734939373684,
+              "lng": 28.8714399933815
+            }
+          ],
+          "postalCode": "34590",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Bahçelievler Mah. Çalışlar Cad. No: 1",
+            "34590 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 35737,
+          "usersCount": 11514,
+          "tipCount": 136
+        },
+        "url": "http://www.arkabahce.com",
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "62521825"
+        },
+        "storeId": "kafe restoran",
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "50056dece4b004dc66b33ea0",
+        "name": "Heybe Kafe",
+        "contact": {
+          "phone": "+905326539890",
+          "formattedPhone": "+90 532 653 98 90",
+          "twitter": "mithatcevher",
+          "facebook": "153856307985629",
+          "facebookUsername": "HeybeKafe",
+          "facebookName": "Heybe"
+        },
+        "location": {
+          "address": "İslambey Mah. Halit Paşa Cad. Tülbentçi Muhittin Sok. No: 13",
+          "crossStreet": "Halitpaşa Caddesi",
+          "lat": 41.047784060034,
+          "lng": 28.931760826742945,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.047784060034,
+              "lng": 28.931760826742945
+            }
+          ],
+          "cc": "TR",
+          "neighborhood": "Islambey",
+          "city": "Eyüp",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "İslambey Mah. Halit Paşa Cad. Tülbentçi Muhittin Sok. No: 13 (Halitpaşa Caddesi)",
+            "Eyüp",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 19170,
+          "usersCount": 7656,
+          "tipCount": 108
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4f087e69e4b0ad9c254145fa",
+        "name": "Kafe Pes",
+        "contact": {},
+        "location": {
+          "address": "Hırkai şerif mahallesi Akşemsettin caddesi no 30 fatih",
+          "lat": 41.02264522263402,
+          "lng": 28.943639976543896,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.02264522263402,
+              "lng": 28.943639976543896
+            }
+          ],
+          "postalCode": "34080",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Hırkai şerif mahallesi Akşemsettin caddesi no 30 fatih",
+            "34080 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1f1931735",
+            "name": "General Entertainment",
+            "pluralName": "General Entertainment",
+            "shortName": "Entertainment",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/default_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 3112,
+          "usersCount": 1047,
+          "tipCount": 16
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "50307be9e4b0f8a00147d7e7",
+        "name": "Vatan Kafe",
+        "contact": {
+          "phone": "+902125324546",
+          "formattedPhone": "+90 212 532 45 46"
+        },
+        "location": {
+          "address": "Murat pasa mahallesi",
+          "crossStreet": "Park ici",
+          "lat": 41.012219862482574,
+          "lng": 28.946352947162165,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.012219862482574,
+              "lng": 28.946352947162165
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "Fatih aksaray",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Murat pasa mahallesi (Park ici)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d120951735",
+            "name": "Food Court",
+            "pluralName": "Food Courts",
+            "shortName": "Food Court",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/food_foodcourt_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 8292,
+          "usersCount": 3311,
+          "tipCount": 55
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/vatan-kafe/50307be9e4b0f8a00147d7e7/menu",
+          "mobileUrl": "https://foursquare.com/v/50307be9e4b0f8a00147d7e7/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5416b08e498e254e2225a28c",
+        "name": "Hermes Kitap Kafe",
+        "contact": {},
+        "location": {
+          "lat": 41.014487490048,
+          "lng": 28.95914605637502,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.014487490048,
+              "lng": 28.95914605637502
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d114951735",
+            "name": "Bookstore",
+            "pluralName": "Bookstores",
+            "shortName": "Bookstore",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/shops/bookstore_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 6719,
+          "usersCount": 2401,
+          "tipCount": 13
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "552bba1c498e37eed8cbd3a2",
+        "name": "Çayistanbul Kitap&Kafe",
+        "contact": {
+          "phone": "+902125450550",
+          "formattedPhone": "+90 212 545 05 50"
+        },
+        "location": {
+          "address": "Eyüp",
+          "crossStreet": "Eyüp Caddesi",
+          "lat": 41.04770562908153,
+          "lng": 28.93524169921875,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.04770562908153,
+              "lng": 28.93524169921875
+            }
+          ],
+          "postalCode": "34080",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Eyüp (Eyüp Caddesi)",
+            "34080 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 47468,
+          "usersCount": 18328,
+          "tipCount": 82
+        },
+        "url": "http://www.cayistanbul.com",
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "129874569"
+        },
+        "storeId": "",
+        "hereNow": {
+          "count": 1,
+          "summary": "One other person is here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 1,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4b94e13ef964a5203e8634e3",
+        "name": "KafeKa",
+        "contact": {
+          "phone": "+902122495105",
+          "formattedPhone": "+90 212 249 51 05"
+        },
+        "location": {
+          "address": "İstiklal Cad. Küçük Parmakkapı Sok. No:10 Taksim Beyoğlu",
+          "lat": 41.035394105019776,
+          "lng": 28.9824250739411,
+          "postalCode": "34433",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "İstiklal Cad. Küçük Parmakkapı Sok. No:10 Taksim Beyoğlu",
+            "34433 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 38907,
+          "usersCount": 22336,
+          "tipCount": 177
+        },
+        "url": "http://www.kafeka.com.tr",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/kafeka/4b94e13ef964a5203e8634e3/menu",
+          "mobileUrl": "https://foursquare.com/v/4b94e13ef964a5203e8634e3/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4be067cb98f2a5932f23c25a",
+        "name": "KafePi Asmalımescit Bomonti Brasserie",
+        "contact": {
+          "phone": "+902122457610",
+          "formattedPhone": "+90 212 245 76 10",
+          "twitter": "kafepiasmali",
+          "instagram": "kafepiasmali",
+          "facebook": "217456025059598",
+          "facebookUsername": "KafePiAsmali",
+          "facebookName": "Kafepi Asmalımescit Bomonti Brasserie"
+        },
+        "location": {
+          "address": "Sofyalı Sk. No:11 Asmalımescit",
+          "lat": 41.02902199498818,
+          "lng": 28.974226022704865,
+          "postalCode": "34430",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Sofyalı Sk. No:11 Asmalımescit",
+            "34430 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d121941735",
+            "name": "Lounge",
+            "pluralName": "Lounges",
+            "shortName": "Lounge",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/default_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 131172,
+          "usersCount": 75518,
+          "tipCount": 510
+        },
+        "url": "http://www.kafepi.com",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/kafepi-asmal%C4%B1mescit-bomonti-brasserie/4be067cb98f2a5932f23c25a/menu",
+          "mobileUrl": "https://foursquare.com/v/4be067cb98f2a5932f23c25a/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "storeId": "",
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [
+          {
+            "id": "5568f45ba7c8a9cf8ec48b3d"
+          }
+        ],
+        "hasPerk": false
+      },
+      {
+        "id": "53beeaea498ed13aa57a2775",
+        "name": "Kubbe-i Aşk",
+        "contact": {
+          "phone": "+902125223275",
+          "formattedPhone": "+90 212 522 32 75",
+          "twitter": "kubbeiaskcafe"
+        },
+        "location": {
+          "address": "Süleymaniye Mah. Fetva Yokuşu, Güneş Han No:3 Fatih",
+          "lat": 41.01654856930238,
+          "lng": 28.9664842930024,
+          "postalCode": "34200",
+          "cc": "TR",
+          "neighborhood": "Süleymaniye",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Süleymaniye Mah. Fetva Yokuşu, Güneş Han No:3 Fatih",
+            "34200 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d119941735",
+            "name": "Hookah Bar",
+            "pluralName": "Hookah Bars",
+            "shortName": "Hookah Bar",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/hookahbar_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 173732,
+          "usersCount": 101877,
+          "tipCount": 531
+        },
+        "url": "http://kubbeiask.com",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/kubbei-a%C5%9Fk/53beeaea498ed13aa57a2775/menu",
+          "mobileUrl": "https://foursquare.com/v/53beeaea498ed13aa57a2775/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "127038744"
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "59526b6b851de53388da5e5e",
+        "name": "Cucina Kafe",
+        "contact": {},
+        "location": {
+          "address": "Millet Caddesi No:87/A",
+          "crossStreet": "Millet Caddesi",
+          "lat": 41.013175489683675,
+          "lng": 28.937294012256558,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.013175489683675,
+              "lng": 28.937294012256558
+            }
+          ],
+          "postalCode": "34104",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Millet Caddesi No:87/A (Millet Caddesi)",
+            "34104 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 709,
+          "usersCount": 377,
+          "tipCount": 1
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4c39b3ebae2da593a2ea02c6",
+        "name": "Piraye Kafe",
+        "contact": {
+          "phone": "+902164142239",
+          "formattedPhone": "+90 216 414 22 39"
+        },
+        "location": {
+          "address": "Ali Suavi Sok. (Sanatçılar Sokağı) No: 7 Bahariye",
+          "crossStreet": "Bahariye Caddesi",
+          "lat": 40.98940648414699,
+          "lng": 29.030373913578295,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 40.98940648414699,
+              "lng": 29.030373913578295
+            }
+          ],
+          "postalCode": "34714",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Ali Suavi Sok. (Sanatçılar Sokağı) No: 7 Bahariye (Bahariye Caddesi)",
+            "34714 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 29780,
+          "usersCount": 19864,
+          "tipCount": 170
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/piraye-kafe/4c39b3ebae2da593a2ea02c6/menu",
+          "mobileUrl": "https://foursquare.com/v/4c39b3ebae2da593a2ea02c6/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4e8ab29502d540e4528f8752",
+        "name": "Karen Kafe",
+        "contact": {
+          "phone": "+902125863724",
+          "formattedPhone": "+90 212 586 37 24"
+        },
+        "location": {
+          "address": "Nevbahar Mah. Kızılelma Cad. No:43 Fatih",
+          "lat": 41.00947042532644,
+          "lng": 28.937945616892364,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.00947042532644,
+              "lng": 28.937945616892364
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Nevbahar Mah. Kızılelma Cad. No:43 Fatih",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16a941735",
+            "name": "Bakery",
+            "pluralName": "Bakeries",
+            "shortName": "Bakery",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/bakery_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 4639,
+          "usersCount": 2389,
+          "tipCount": 42
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/karen-kafe/4e8ab29502d540e4528f8752/menu",
+          "mobileUrl": "https://foursquare.com/v/4e8ab29502d540e4528f8752/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5635fc9d498eb62fdeb10f23",
+        "name": "İstanbul Kitap Kafe",
+        "contact": {},
+        "location": {
+          "address": "Kadıköy Vapur İskelesi",
+          "crossStreet": "Kadıköy Rıhtım",
+          "lat": 40.992918502380405,
+          "lng": 29.022887959677472,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 40.992918502380405,
+              "lng": 29.022887959677472
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Kadıköy Vapur İskelesi (Kadıköy Rıhtım)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 20403,
+          "usersCount": 11312,
+          "tipCount": 26
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "58ecb10830ecc67485284fdb",
+        "name": "Arya Lounge",
+        "contact": {},
+        "location": {
+          "address": "Fetva Yokuşu",
+          "lat": 41.01686563997346,
+          "lng": 28.965868897317524,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.01686563997346,
+              "lng": 28.965868897317524
+            }
+          ],
+          "cc": "TR",
+          "neighborhood": "Demirtas",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Fetva Yokuşu",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1c4941735",
+            "name": "Restaurant",
+            "pluralName": "Restaurants",
+            "shortName": "Restaurant",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 18863,
+          "usersCount": 8919,
+          "tipCount": 48
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "559463d1498ed8cb942b8186",
+        "name": "Fetih Kafe",
+        "contact": {
+          "phone": "+905318556727",
+          "formattedPhone": "+90 531 855 67 27",
+          "instagram": "fetihcafe1453"
+        },
+        "location": {
+          "address": "Kazlıçeşme Mah. 10. Yıl Cad. No: 4",
+          "lat": 40.99342254908677,
+          "lng": 28.920898940224337,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 40.99342254908677,
+              "lng": 28.920898940224337
+            }
+          ],
+          "postalCode": "34020",
+          "cc": "TR",
+          "neighborhood": "Yedikule",
+          "city": "Zeytinburnu",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Kazlıçeşme Mah. 10. Yıl Cad. No: 4",
+            "34020 Istanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 12978,
+          "usersCount": 4884,
+          "tipCount": 21
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4cbaccd8adcd5481723c25a2",
+        "name": "Hanedan Kafe",
+        "contact": {},
+        "location": {
+          "address": "Fatih",
+          "lat": 41.013502637756055,
+          "lng": 28.960804496352367,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.013502637756055,
+              "lng": 28.960804496352367
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Fatih",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 1232,
+          "usersCount": 498,
+          "tipCount": 3
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "557a82af498e2a3d902782cc",
+        "name": "Ehibbâ Kafe",
+        "contact": {},
+        "location": {
+          "address": "Zeyrek Mahallesi",
+          "crossStreet": "Haydarbey Caddesi",
+          "lat": 41.016930842514014,
+          "lng": 28.952997998207287,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.016930842514014,
+              "lng": 28.952997998207287
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Zeyrek Mahallesi (Haydarbey Caddesi)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 2312,
+          "usersCount": 1068,
+          "tipCount": 14
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "554ea980498e35d643ad190e",
+        "name": "kafe pes",
+        "contact": {
+          "phone": "+902125324815",
+          "formattedPhone": "+90 212 532 48 15"
+        },
+        "location": {
+          "address": "Hırkai Şerif Mahallesi Fevzi Paşa Caddesi No 179",
+          "lat": 41.02265264036161,
+          "lng": 28.94363680732749,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.02265264036161,
+              "lng": 28.94363680732749
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Hırkai Şerif Mahallesi Fevzi Paşa Caddesi No 179",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e1931735",
+            "name": "Arcade",
+            "pluralName": "Arcades",
+            "shortName": "Arcade",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/arcade_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 572,
+          "usersCount": 106,
+          "tipCount": 2
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4b7d8908f964a5201cc52fe3",
+        "name": "KafePi",
+        "contact": {
+          "phone": "+902122589879",
+          "formattedPhone": "+90 212 258 98 79",
+          "facebook": "306921139410700"
+        },
+        "location": {
+          "address": "Barbaros Blv. No: 55/A Beşiktaş",
+          "crossStreet": "Barbaros Bul. No: 55/A",
+          "lat": 41.04666058934254,
+          "lng": 29.007396030674737,
+          "postalCode": "34433",
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Barbaros Blv. No: 55/A Beşiktaş (Barbaros Bul. No: 55/A)",
+            "34433 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d116941735",
+            "name": "Bar",
+            "pluralName": "Bars",
+            "shortName": "Bar",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 102992,
+          "usersCount": 58593,
+          "tipCount": 436
+        },
+        "url": "http://www.kafepi.com",
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/kafepi/4b7d8908f964a5201cc52fe3/menu",
+          "mobileUrl": "https://foursquare.com/v/4b7d8908f964a5201cc52fe3/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "47027273"
+        },
+        "storeId": "",
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [
+          {
+            "id": "5568f45ba7c8a9cf8ec48b3d"
+          }
+        ],
+        "hasPerk": false
+      },
+      {
+        "id": "4c5065df2a73c928190b73d2",
+        "name": "Cafe'de Keyff",
+        "contact": {
+          "phone": "+902126609199",
+          "formattedPhone": "+90 212 660 91 99"
+        },
+        "location": {
+          "address": "Zuhuratbaba Mh. İncirli Cd. No:82 Bakırköy",
+          "crossStreet": "İncirli Cad.",
+          "lat": 40.99190871879715,
+          "lng": 28.870262503623962,
+          "postalCode": "34025",
+          "cc": "TR",
+          "neighborhood": "Kartaltepe",
+          "city": "Bakırköy",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Zuhuratbaba Mh. İncirli Cd. No:82 Bakırköy (İncirli Cad.)",
+            "34025 Bakırköy",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 549743,
+          "usersCount": 169690,
+          "tipCount": 1402
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/cafede-keyff/4c5065df2a73c928190b73d2/menu",
+          "mobileUrl": "https://foursquare.com/v/4c5065df2a73c928190b73d2/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "358156473"
+        },
+        "hereNow": {
+          "count": 3,
+          "summary": "3 people are here",
+          "groups": [
+            {
+              "type": "others",
+              "name": "Other people here",
+              "count": 3,
+              "items": []
+            }
+          ]
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "5607d1a4498ec78f8c270c9c",
+        "name": "Mim Kahve",
+        "contact": {
+          "phone": "+902125118856",
+          "formattedPhone": "+90 212 511 88 56",
+          "twitter": "mimkahve",
+          "instagram": "mimkahve",
+          "facebook": "831981020223694",
+          "facebookUsername": "mimkahve",
+          "facebookName": "Mim Kahve"
+        },
+        "location": {
+          "address": "Demirtaş Mah. Deveoğlu Yokuşu Sok. Eminönü",
+          "crossStreet": "Ord. Prof. Dr. Cemil Birsel Cad.",
+          "lat": 41.01746152401168,
+          "lng": 28.967221677303314,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.01746152401168,
+              "lng": 28.967221677303314
+            }
+          ],
+          "postalCode": "34134",
+          "cc": "TR",
+          "neighborhood": "Demirtas",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Demirtaş Mah. Deveoğlu Yokuşu Sok. Eminönü (Ord. Prof. Dr. Cemil Birsel Cad.)",
+            "34134 İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": true,
+        "stats": {
+          "checkinsCount": 47673,
+          "usersCount": 26546,
+          "tipCount": 123
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "venuePage": {
+          "id": "152369635"
+        },
+        "storeId": "",
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "554a3c7e498e5b5c7d6806d9",
+        "name": "Ara Sokak Kafe",
+        "contact": {},
+        "location": {
+          "address": "Orhan Adli Apaydin Sk No 7B",
+          "crossStreet": "Istiklal",
+          "lat": 41.03058178288859,
+          "lng": 28.9749883206235,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.03058178288859,
+              "lng": 28.9749883206235
+            }
+          ],
+          "cc": "TR",
+          "city": "İstanbul",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Orhan Adli Apaydin Sk No 7B (Istiklal)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 1303,
+          "usersCount": 707,
+          "tipCount": 14
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4c27871eb012b713f3140993",
+        "name": "Shey Bowling & Cafe",
+        "contact": {
+          "phone": "+902125214048",
+          "formattedPhone": "+90 212 521 40 48",
+          "twitter": "sheycafebowling"
+        },
+        "location": {
+          "address": "Historia",
+          "crossStreet": "Akşemsettin Mah. Adnan Menderes Vatan Blv. No:2/4",
+          "lat": 41.01416966823788,
+          "lng": 28.945083314556054,
+          "postalCode": "34080",
+          "cc": "TR",
+          "city": "Fatih",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Historia (Akşemsettin Mah. Adnan Menderes Vatan Blv. No:2/4)",
+            "34080 Fatih",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d1e4931735",
+            "name": "Bowling Alley",
+            "pluralName": "Bowling Alleys",
+            "shortName": "Bowling Alley",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/bowling_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 53180,
+          "usersCount": 22019,
+          "tipCount": 328
+        },
+        "url": "http://www.shey.com.tr",
+        "hasMenu": true,
+        "menu": {
+          "type": "Prices",
+          "label": "Prices",
+          "anchor": "View Prices",
+          "url": "https://foursquare.com/v/shey-bowling--cafe/4c27871eb012b713f3140993/menu",
+          "mobileUrl": "https://foursquare.com/v/4c27871eb012b713f3140993/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "55b634a7498e45467c46fdac",
+        "name": "Otlangaç Kahvaltı & Kafe",
+        "contact": {
+          "phone": "+905313757772",
+          "formattedPhone": "+90 531 375 77 72"
+        },
+        "location": {
+          "address": "Sinan Paşa Mah. Şair Veysi Sok. No: 20/B",
+          "crossStreet": "Ihlamur Dere Cad.",
+          "lat": 41.04437445344466,
+          "lng": 29.002369193577415,
+          "labeledLatLngs": [
+            {
+              "label": "display",
+              "lat": 41.04437445344466,
+              "lng": 29.002369193577415
+            }
+          ],
+          "cc": "TR",
+          "city": "Beşiktaş",
+          "state": "İstanbul",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Sinan Paşa Mah. Şair Veysi Sok. No: 20/B (Ihlamur Dere Cad.)",
+            "İstanbul",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d143941735",
+            "name": "Breakfast Spot",
+            "pluralName": "Breakfast Spots",
+            "shortName": "Breakfast",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/breakfast_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 3810,
+          "usersCount": 2195,
+          "tipCount": 40
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      },
+      {
+        "id": "4d67c2ff709bb60cddabad14",
+        "name": "Sezon Cafe",
+        "contact": {},
+        "location": {
+          "address": "Başvekil Cad. No:48 Çapa",
+          "crossStreet": "Başvekil Cad.",
+          "lat": 41.012917599213914,
+          "lng": 28.93174316525656,
+          "postalCode": "34104",
+          "cc": "TR",
+          "country": "Türkiye",
+          "formattedAddress": [
+            "Başvekil Cad. No:48 Çapa (Başvekil Cad.)",
+            "34104",
+            "Türkiye"
+          ]
+        },
+        "categories": [
+          {
+            "id": "4bf58dd8d48988d16d941735",
+            "name": "Café",
+            "pluralName": "Cafés",
+            "shortName": "Café",
+            "icon": {
+              "prefix": "https://ss3.4sqi.net/img/categories_v2/food/cafe_",
+              "suffix": ".png"
+            },
+            "primary": true
+          }
+        ],
+        "verified": false,
+        "stats": {
+          "checkinsCount": 72191,
+          "usersCount": 18665,
+          "tipCount": 222
+        },
+        "hasMenu": true,
+        "menu": {
+          "type": "Menu",
+          "label": "Menu",
+          "anchor": "View Menu",
+          "url": "https://foursquare.com/v/sezon-cafe/4d67c2ff709bb60cddabad14/menu",
+          "mobileUrl": "https://foursquare.com/v/4d67c2ff709bb60cddabad14/device_menu"
+        },
+        "allowMenuUrlEdit": true,
+        "beenHere": {
+          "lastCheckinExpiredAt": 0
+        },
+        "specials": {
+          "count": 0,
+          "items": []
+        },
+        "hereNow": {
+          "count": 0,
+          "summary": "Nobody here",
+          "groups": []
+        },
+        "referralId": "v-1514448307",
+        "venueChains": [],
+        "hasPerk": false
+      }
+    ],
+    "geocode": {
+      "what": "",
+      "where": "istanbul",
+      "feature": {
+        "cc": "TR",
+        "name": "Istanbul",
+        "displayName": "Istanbul, Turkey",
+        "matchedName": "Istanbul, Turkey",
+        "highlightedName": "<b>Istanbul</b>, Turkey",
+        "woeType": 7,
+        "slug": "istanbul",
+        "id": "geonameid:745044",
+        "longId": "72057594038672980",
+        "geometry": {
+          "center": {
+            "lat": 41.01384,
+            "lng": 28.94966
+          },
+          "bounds": {
+            "ne": {
+              "lat": 41.583896981907635,
+              "lng": 29.95880097737308
+            },
+            "sw": {
+              "lat": 40.80260400000006,
+              "lng": 27.971700000085676
+            }
+          }
+        }
+      },
+      "parents": []
+    }
+  }
+}

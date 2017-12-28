@@ -3,7 +3,8 @@ package com.gokhanaliccii.flavorhunter.rest;
 import android.content.Context;
 
 import com.gokhanaliccii.flavorhunter.BuildConfig;
-import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceSearchApi;
+import com.gokhanaliccii.flavorhunter.rest.api.RestApi;
+import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceApi;
 import com.gokhanaliccii.flavorhunter.rest.interceptor.FoursquareInterceptor;
 
 import java.util.concurrent.TimeUnit;
@@ -20,25 +21,17 @@ import static okhttp3.logging.HttpLoggingInterceptor.Level.BODY;
  * Created by gokhan on 28/12/17.
  */
 
-public class RestAdapter {
+public class RestAdapter implements RestApi{
 
     public static final String API_URL = "https://api.foursquare.com/v2/venues/";
     private static RestAdapter sInstance;
 
     private Retrofit mRetrofit;
-    private PlaceSearchApi mSearchApi;
+    private PlaceApi mSearchApi;
 
 
-    public static RestAdapter getsInstance() {
-        return sInstance;
-    }
-
-    public static RestAdapter getsInstance(Context context) {
-        if(sInstance == null){
-            sInstance=new RestAdapter();
-            sInstance.init(context);
-        }
-        return sInstance;
+    public RestAdapter(Context context) {
+        init(context);
     }
 
     private void init(Context context) {
@@ -61,10 +54,11 @@ public class RestAdapter {
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
 
-        mSearchApi = mRetrofit.create(PlaceSearchApi.class);
+        mSearchApi = mRetrofit.create(PlaceApi.class);
     }
 
-    public PlaceSearchApi getSearchApi() {
-        return mSearchApi;
+    @Override
+    public PlaceApi placeApi() {
+        return null;
     }
 }
