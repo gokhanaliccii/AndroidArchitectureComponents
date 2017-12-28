@@ -17,7 +17,6 @@ import static org.junit.Assert.assertThat;
 @RunWith(AndroidJUnit4.class)
 public class AssetReaderTest {
 
-
     @Test
     public void should_ReadUserFileAndMapCorrectly() {
         final String expected = "test";
@@ -57,10 +56,6 @@ public class AssetReaderTest {
 
         public String getUsername() {
             return username;
-        }
-
-        public void setUsername(String username) {
-            this.username = username;
         }
 
         @Override

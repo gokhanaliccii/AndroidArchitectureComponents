@@ -3,6 +3,7 @@ package com.gokhanaliccii.flavorhunter.rest;
 import android.content.Context;
 
 import com.gokhanaliccii.flavorhunter.BuildConfig;
+import com.gokhanaliccii.flavorhunter.rest.api.RestApi;
 import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceApi;
 import com.gokhanaliccii.flavorhunter.rest.interceptor.FoursquareInterceptor;
 
@@ -20,7 +21,7 @@ import static okhttp3.logging.HttpLoggingInterceptor.Level.BODY;
  * Created by gokhan on 28/12/17.
  */
 
-public class RestAdapter {
+public class RestAdapter implements RestApi{
 
     public static final String API_URL = "https://api.foursquare.com/v2/venues/";
     private static RestAdapter sInstance;
@@ -29,16 +30,8 @@ public class RestAdapter {
     private PlaceApi mSearchApi;
 
 
-    public static RestAdapter getsInstance() {
-        return sInstance;
-    }
-
-    public static RestAdapter getsInstance(Context context) {
-        if(sInstance == null){
-            sInstance=new RestAdapter();
-            sInstance.init(context);
-        }
-        return sInstance;
+    public RestAdapter(Context context) {
+        init(context);
     }
 
     private void init(Context context) {
@@ -64,7 +57,8 @@ public class RestAdapter {
         mSearchApi = mRetrofit.create(PlaceApi.class);
     }
 
-    public PlaceApi getSearchApi() {
-        return mSearchApi;
+    @Override
+    public PlaceApi placeApi() {
+        return null;
     }
 }
