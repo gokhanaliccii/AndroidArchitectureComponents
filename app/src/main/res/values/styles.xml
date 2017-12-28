@@ -18,4 +18,14 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="VenueListItemTitleStyle" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="VenueListItemAddressStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
 </resources>

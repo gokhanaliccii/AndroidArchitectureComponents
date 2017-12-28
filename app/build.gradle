@@ -29,11 +29,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "default"
+
+    productFlavors{
+
+        live{
+
+        }
+
+        mock{
+            applicationIdSuffix "mock"
+        }
+
+    }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "com.android.support:design:26.1.0"
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
     implementation "android.arch.lifecycle:extensions:$rootProject.archLifeCycleVersion"
@@ -41,9 +58,14 @@ dependencies {
     implementation "io.reactivex:rxjava:$rootProject.rxjavaVersion"
     implementation "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:2.3.0"
     implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttpVersion"
     implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpVersion"
     implementation "com.squareup.okhttp3:mockwebserver:$rootProject.okHttpVersion"
+    implementation "com.annimon:stream:$rootProject.streamLibrary"
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+    implementation "de.hdodenhof:circleimageview:2.2.0"
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:1.10.19'
@@ -54,9 +76,5 @@ dependencies {
     androidTestCompile "com.google.dexmaker:dexmaker-mockito:$rootProject.dexMakerVersion"
     androidTestCompile "com.google.dexmaker:dexmaker:$rootProject.dexMakerVersion"
     androidTestCompile 'com.android.support.test.uiautomator:uiautomator-v18:' + rootProject.uiautomatorVersion;
-
-
-
-
 
 }

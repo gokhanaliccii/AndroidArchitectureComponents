@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import
+            alias="v"
+            type="android.view.View" />
+
+        <variable
+            name="venue"
+            type="com.gokhanaliccii.flavorhunter.rest.api.response.venue.Venue" />
+
+        <variable
+            name="clickListener"
+            type="com.gokhanaliccii.flavorhunter.view.venue.detail.ActionClickListener" />
+
+    </data>
+
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                app:placeholder="@{@drawable/ic_venue_placeholder}"
+                app:url="@{venue.imageUrl}" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large.Inverse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorVenueHighlight"
+                android:padding="10dp"
+                android:text="@{venue.name}"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/action_call_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="@{()->clickListener.onCallButtonClicked(venue.contactNumber)}"
+            android:src="@android:drawable/ic_menu_call"
+            android:visibility="@{venue.contactNumber == null  ? v.GONE : v.VISIBLE}" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>
