@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="com.gokhanaliccii.flavorhunter.MainActivity">
+        <activity android:name="com.gokhanaliccii.flavorhunter.view.venue.VenueActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

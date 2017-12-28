@@ -6,7 +6,8 @@ import android.support.annotation.NonNull;
 
 import com.gokhanaliccii.flavorhunter.FlavorHunterApp;
 import com.gokhanaliccii.flavorhunter.data.RepositoryFactory;
-import com.gokhanaliccii.flavorhunter.view.main.VenuesViewModel;
+import com.gokhanaliccii.flavorhunter.view.venue.detail.VenueDetailViewModel;
+import com.gokhanaliccii.flavorhunter.view.venue.list.VenuesViewModel;
 
 /**
  * Created by gokhan on 28/12/17.
@@ -24,6 +25,10 @@ public class ViewModelProviderFactory implements ViewModelProvider.Factory {
             VenuesViewModel venuesViewModel = new VenuesViewModel(repositoryFactory.getVenueListRepositoy());
 
             return (T) venuesViewModel;
+        } else if (modelClass.isAssignableFrom(VenueDetailViewModel.class)) {
+            VenueDetailViewModel venueDetailViewModel = new VenueDetailViewModel(repositoryFactory.getVenueDetailRepositoy());
+
+            return (T) venueDetailViewModel;
         }
 
 

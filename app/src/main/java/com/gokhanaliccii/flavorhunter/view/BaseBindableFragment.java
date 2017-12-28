@@ -13,7 +13,7 @@ import android.view.ViewGroup;
  * Created by gokhan on 28/12/17.
  */
 
-public abstract class BaseFragment<ViewAdapter extends ViewDataBinding> extends Fragment {
+public abstract class BaseBindableFragment<ViewAdapter extends ViewDataBinding> extends Fragment {
 
     protected ViewAdapter mLayoutAdapter;
 
@@ -36,9 +36,16 @@ public abstract class BaseFragment<ViewAdapter extends ViewDataBinding> extends 
             mLayoutAdapter = DataBindingUtil.bind(view);
         }
 
+        onViewInflated();
+
         return mLayoutAdapter.getRoot();
     }
 
+    @Override
+    public void onDestroy() {
+        mLayoutAdapter = null;
+        super.onDestroy();
+    }
 
     protected abstract int layoutRes();
 
