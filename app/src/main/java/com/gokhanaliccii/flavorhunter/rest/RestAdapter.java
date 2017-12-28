@@ -3,7 +3,7 @@ package com.gokhanaliccii.flavorhunter.rest;
 import android.content.Context;
 
 import com.gokhanaliccii.flavorhunter.BuildConfig;
-import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceSearchApi;
+import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceApi;
 import com.gokhanaliccii.flavorhunter.rest.interceptor.FoursquareInterceptor;
 
 import java.util.concurrent.TimeUnit;
@@ -26,7 +26,7 @@ public class RestAdapter {
     private static RestAdapter sInstance;
 
     private Retrofit mRetrofit;
-    private PlaceSearchApi mSearchApi;
+    private PlaceApi mSearchApi;
 
 
     public static RestAdapter getsInstance() {
@@ -61,10 +61,10 @@ public class RestAdapter {
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();
 
-        mSearchApi = mRetrofit.create(PlaceSearchApi.class);
+        mSearchApi = mRetrofit.create(PlaceApi.class);
     }
 
-    public PlaceSearchApi getSearchApi() {
+    public PlaceApi getSearchApi() {
         return mSearchApi;
     }
 }
