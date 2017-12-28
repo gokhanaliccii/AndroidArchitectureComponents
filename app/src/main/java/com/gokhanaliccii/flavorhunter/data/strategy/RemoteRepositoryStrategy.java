@@ -1,8 +1,8 @@
 package com.gokhanaliccii.flavorhunter.data.strategy;
 
 import com.gokhanaliccii.flavorhunter.components.repository.Repository;
-import com.gokhanaliccii.flavorhunter.data.venue.VenueDetailRemoteRepository;
-import com.gokhanaliccii.flavorhunter.data.venue.VenuesRemoteRepository;
+import com.gokhanaliccii.flavorhunter.data.repository.VenueDetailRemoteRepository;
+import com.gokhanaliccii.flavorhunter.data.repository.VenuesRemoteRepository;
 import com.gokhanaliccii.flavorhunter.rest.api.RestApi;
 import com.gokhanaliccii.flavorhunter.rest.api.response.venue.Venue;
 import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceApi;

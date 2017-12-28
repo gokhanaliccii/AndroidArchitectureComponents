@@ -1,4 +1,4 @@
-package com.gokhanaliccii.flavorhunter.data.venue;
+package com.gokhanaliccii.flavorhunter.data.repository;
 
 import com.gokhanaliccii.flavorhunter.components.repository.Repository;
 import com.gokhanaliccii.flavorhunter.components.repository.callback.DataLoadListener;
@@ -10,6 +10,7 @@ import com.gokhanaliccii.flavorhunter.rest.api.service.PlaceApi;
 
 import java.util.List;
 
+import rx.Subscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
@@ -19,7 +20,7 @@ import static com.gokhanaliccii.flavorhunter.util.NullChecker.isNull;
  * Created by gokhan on 28/12/17.
  */
 
-public class VenuesRemoteRepository implements Repository<List<Venue>> {
+public class VenuesRemoteRepository extends AbsRemoteRepository implements Repository<List<Venue>> {
 
     private PlaceApi placeApi;
 
@@ -33,7 +34,7 @@ public class VenuesRemoteRepository implements Repository<List<Venue>> {
             throw new IllegalArgumentException("DataLoadListener or SearchCriteria cant be null");
         }
 
-        placeApi.getVenuesByNearby(searchCriteria[0].criteria(), searchCriteria[1].criteria())
+        Subscription subscription = placeApi.getVenuesByNearby(searchCriteria[0].criteria(), searchCriteria[1].criteria())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(foursquareResponse -> {
@@ -45,6 +46,7 @@ public class VenuesRemoteRepository implements Repository<List<Venue>> {
 
                 });
 
+        addSubscription(subscription);
     }
 
     @Override

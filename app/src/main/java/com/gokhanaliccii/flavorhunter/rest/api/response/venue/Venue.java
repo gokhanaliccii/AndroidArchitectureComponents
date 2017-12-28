@@ -25,4 +25,12 @@ public class Venue {
     public float getRating() {
         return rating;
     }
+
+    public VenueLocation getLocation() {
+        return location;
+    }
+
+    public String getAddress(){
+        return location.getAddress();
+    }
 }
