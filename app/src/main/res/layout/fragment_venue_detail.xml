@@ -3,9 +3,18 @@
 
     <data>
 
+        <import
+            alias="v"
+            type="android.view.View" />
+
         <variable
             name="venue"
             type="com.gokhanaliccii.flavorhunter.rest.api.response.venue.Venue" />
+
+        <variable
+            name="clickListener"
+            type="com.gokhanaliccii.flavorhunter.view.venue.detail.ActionClickListener" />
+
     </data>
 
 
@@ -24,9 +33,8 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center_horizontal"
                 android:padding="10dp"
-                app:url="@{venue.imageUrl}"
                 app:placeholder="@{@drawable/ic_venue_placeholder}"
-                />
+                app:url="@{venue.imageUrl}" />
 
             <TextView
                 style="@style/TextAppearance.AppCompat.Large.Inverse"
@@ -47,7 +55,9 @@
             android:layout_gravity="end|bottom"
             android:layout_marginBottom="20dp"
             android:layout_marginRight="20dp"
-            android:src="@android:drawable/ic_menu_call" />
+            android:onClick="@{()->clickListener.onCallButtonClicked(venue.contactNumber)}"
+            android:src="@android:drawable/ic_menu_call"
+            android:visibility="@{venue.contactNumber == null  ? v.GONE : v.VISIBLE}" />
     </android.support.design.widget.CoordinatorLayout>
 
 </layout>

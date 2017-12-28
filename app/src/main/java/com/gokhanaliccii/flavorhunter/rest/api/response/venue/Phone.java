@@ -7,4 +7,12 @@ package com.gokhanaliccii.flavorhunter.rest.api.response.venue;
 public class Phone {
     private String phone;
     private String formattedPhone;
+
+    public String getFormattedPhone() {
+        return formattedPhone;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
 }

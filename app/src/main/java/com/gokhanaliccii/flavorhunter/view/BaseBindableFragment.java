@@ -9,11 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionActivity;
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionRequester;
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionResponseListener;
+
 /**
  * Created by gokhan on 28/12/17.
  */
 
-public abstract class BaseBindableFragment<ViewAdapter extends ViewDataBinding> extends Fragment {
+public abstract class BaseBindableFragment<ViewAdapter extends ViewDataBinding> extends Fragment implements PermissionRequester {
 
     protected ViewAdapter mLayoutAdapter;
 
@@ -47,8 +51,12 @@ public abstract class BaseBindableFragment<ViewAdapter extends ViewDataBinding> 
         super.onDestroy();
     }
 
+    @Override
+    public void requestPermissions(PermissionResponseListener responseListener, String[] permissions) {
+        PermissionActivity.requestForPermission(getContext(), responseListener, permissions);
+    }
+
     protected abstract int layoutRes();
 
     protected abstract void onViewInflated();
-
 }

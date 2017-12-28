@@ -5,12 +5,15 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
 import com.gokhanaliccii.flavorhunter.R;
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionActivity;
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionRequester;
+import com.gokhanaliccii.flavorhunter.components.permission.PermissionResponseListener;
 
 /**
  * Created by gokhan on 27/12/17.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseActivity extends AppCompatActivity implements PermissionRequester {
 
     private static final String TAG = "BaseActivity";
 
@@ -33,4 +36,8 @@ public class BaseActivity extends AppCompatActivity {
         return fragmentTransaction;
     }
 
+    @Override
+    public void requestPermissions(PermissionResponseListener responseListener, String[] permissions) {
+        PermissionActivity.requestForPermission(this, responseListener, permissions);
+    }
 }
